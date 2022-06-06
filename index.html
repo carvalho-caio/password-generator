@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Gerador de Senha</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 class="title">Gerador de Senha</h1>
+        <h3 id ="passwordDisplay" class="password-display"></h3>
+        <form id="passwordGeneratorForm" class="form">
+            <label for="">Número de Caracteres</label>
+
+            <div class="characterAmountContainer">
+                <input type="range" min="1" max="30" value="10" id="characterAmountRange">
+                <input class="numberImput" type="number" min="1" max="30" value="10" id="characterAmountNumber">
+            </div>
+
+            <label for="">Incluir Maiúsculas</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="">Incluir Números</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="">Incluir Simbolos</label>
+            <input type="checkbox" id="includeSymbols">
+
+            <button class="btn" type="submit">Gerar Senha</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
